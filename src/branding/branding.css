@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'ABeeZee';
+  src: url("/font/ABeeZee.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url("/fonts/SourceCodePro.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url("/font/Figtree.ttf") format("truetype");
+  font-display: swap;
+}
+
+
+:root {
+  --bright-blue: #36c6fb;
+  --light-blue: #91e2ffce;
+  --very-light-blue: #baedff;
+  --very-dark-green: #132f1e;
+  --dark-green: #2e522b;
+  --medium-green: #76b070;
+  --semi-opaque-green: #64d6ff4d;
+  --medium-light-green: #76b07080;
+  --pale-orange: #EAE6E2;
+}
+
+.brand-main {
+  min-height: calc(100vh - 78px);
+  padding: 2rem 1rem 2.5rem;
+  background: var(--pale-orange);
+}
+
+.brand-sect{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3em;
+
+}
+
+.brand-container{
+  display: flex;
+  gap: 2em;
+}
+
+.brand-card{
+}
+
+.brand-card-small{
+  width:  clamp(200px, 8vw, 300px);
+  height: clamp(120px, 5vw, 180px);
+  padding: 1em;
+  border: 1.5px black solid;
+  border-radius: 20px;
+}
+
+.brand-head-img{
+}
+
+
+.brand-card-img{
+
+}
+
+.brand-title{
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin: 0 0 0.4rem;
+  font-family: 'ABeeZee';  
+}
+
+.brand-subtitle{
+    
+}
+
+.brand-p{
+    
+}
+
