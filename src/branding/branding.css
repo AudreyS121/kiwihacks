@@ -49,6 +49,11 @@
   gap: 2em;
 }
 
+.brand-hr{
+  width: 100%;
+  border: 3px dashed var(--medium-green);
+}
+
 .brand-card{
 }
 
@@ -61,6 +66,7 @@
 }
 
 .brand-head-img{
+  transform: scale(0.7);
 }
 
 
