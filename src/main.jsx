@@ -6,6 +6,8 @@ import DateChangePage from "./DateChangePage/DateChangePage.jsx";
 import AnnouncementVideoPage from "./AnnouncementVideoPage/AnnouncementVideoPage.jsx";
 import NotFound from "./NotFound/NotFound.jsx";
 import CodeOfConduct from "./CodeOfConduct/CodeOfConduct.jsx";
+import Branding from "./branding/branding.jsx";
+
 import ForkPreviewPage from "./ForkPreviewPage/ForkPreviewPage.jsx";
 import ParentsGuide from "./ParentsGuide/ParentsGuide.jsx";
 import { seoHeadHtml } from "./SEO/seoConfig.js";
@@ -95,7 +97,10 @@ if (pathname === "/" || pathname === "") {
   PageComponent = EmptyPage;
 } else if (pathname === "/code-of-conduct" || pathname === "/coc" || pathname === "/codeofconduct" || pathname === "/conduct") {
   PageComponent = CodeOfConduct;
-} else if (pathname === "/parents-guide" || pathname === "/parentsguide" || pathname === "/parents") {
+}else if (pathname === "/branding" || pathname === "/brand" || pathname === "/brandguidelines") {
+  PageComponent = Branding;
+} 
+else if (pathname === "/parents-guide" || pathname === "/parentsguide" || pathname === "/parents") {
   //PageComponent = ParentsGuide;
   window.location.replace("https://docs.google.com/document/d/14HMPfRkPQrFVf1E87cvsUqguILbtwoifEJ5hYUwhgRM/edit");
   PageComponent = EmptyPage;

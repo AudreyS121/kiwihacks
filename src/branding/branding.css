@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'ABeeZee';
+  font-family: 'ABeeZee', sans-serif;
   src: url("/font/ABeeZee.ttf") format("truetype");
   font-display: swap;
 }
@@ -11,10 +11,11 @@
 }
 
 @font-face {
-  font-family: 'Figtree';
+  font-family: 'Figtree', sans-serif;
   src: url("/font/Figtree.ttf") format("truetype");
   font-display: swap;
 }
+
 
 
 :root {
@@ -41,6 +42,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 3em;
+  font-family: "ABeeZee", sans-serif;
 
 }
 
@@ -55,13 +57,19 @@
 }
 
 .brand-card{
+  width:  clamp(300px, 10vw, 600px);
+  height: clamp(300px, 6vw, 400px);
+  padding: 1em;
+  border: 2px black solid;
+  border-radius: 20px;
+  background-color: white;
 }
 
 .brand-card-small{
   width:  clamp(200px, 8vw, 300px);
   height: clamp(120px, 5vw, 180px);
   padding: 1em;
-  border: 1.5px black solid;
+  border: 2px black solid;
   border-radius: 20px;
 }
 
@@ -77,14 +85,36 @@
 .brand-title{
   font-size: clamp(2rem, 4vw, 4rem);
   margin: 0 0 0.4rem;
-  font-family: 'ABeeZee';  
+  font-family: 'ABeeZee', sans-serif;  
 }
 
 .brand-subtitle{
     
 }
 
+.brand-h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.brand-h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.brand-h4{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
 .brand-p{
-    
+    font-size: 20px;
+    text-align: center;
+    font-family: "Figtree", sans-serif;
+
 }
 
